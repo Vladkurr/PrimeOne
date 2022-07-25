@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@font-face {
+    font-family: 'Azik';
+    src: url('fonts/AkzidenzGroteskPro-XBdCnIt.eot');
+    src: local('☺'), url('fonts/AkzidenzGroteskPro-XBdCnIt.woff') format('woff'), url('fonts/AkzidenzGroteskPro-XBdCnIt.ttf') format('truetype'), url('fonts/AkzidenzGroteskPro-XBdCnIt.svg') format('svg');
+    font-weight: 400;
+    font-style: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*adaptive*/
+
+@media (max-width:900px) {
+    .section-1 {
+        flex-direction: column;
+    }
+    .section-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-2-column__img {
+        margin-left: 150px;
+    }
+    .section-3 {
+        flex-direction: column;
+    }
+    .section-4-container {
+        flex-direction: column;
+    }
+    .section-6-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-6__title {
+        margin-left: 150px;
+    }
+    .section-5__title {
+        margin-left: 250px;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+
+/* header-top */
+
+.header {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.header-top {
+    padding: 29px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top__langs {
+    display: flex;
+    font-family: Bebas Neue;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-top__langs a {
+    display: block;
+    padding: 1px 4px;
+}
+
+.header-top__langs a:first-child {
+    background-color: black;
+    color: white;
+}
+
+.header-top__item {
+    margin-right: 15px;
+}
+
+.header-top__order {}
+
+.header-top__ordering {
+    color: #000000;
+    font-family: Bebas Neue;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+/* header-bottom */
+
+.header-bottom {
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-1 {}
+
+.nav {
+    width: 100%;
+    color: #000000;
+    font-family: Bebas Neue;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav-1__items:last-child {
+    margin-right: 40px;
+}
+
+.items {}
+
+.header-nav-1__item {}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-logo__top {
+    font-family: Bebas;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    letter-spacing: 2.72px;
+}
+
+.header-logo__mid {}
+
+.header-logo__bottom span {
+    font-family: Bebas Neueu;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.header-nav-2 {}
+
+.header-nav-2__items:first-child {
+    margin-left: 40px;
+}
+
+.header-nav-2__item {}
+
+
+/*section*/
+
+.section-1 {
+    display: flex;
+    max-width: 1366px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.section-column {
+    background-color: #000000;
+    flex: 1 1 50%;
+    position: relative;
+    padding-bottom: 362px;
+    box-sizing: border-box;
+}
+
+.section-column:last-child {
+    padding: 75px 60px;
+}
+
+.section-column__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-column-title {}
+
+.section-column-title__item {
+    color: #ffffff;
+    word-spacing: 100000px;
+    font-family: "Akzidenz Grotesk BQ - Bd Cnd";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 37px;
+}
+
+.section-column-text {
+    padding-bottom: 55px;
+}
+
+.section-column-text__item {
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px
+}
+
+.section-column-buttons {}
+
+.section-column-buttons__item {
+    color: white;
+    font-family: Bebas;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.section-column-buttons__item:hover {
+    opacity: 0.9;
+}
+
+.section-column-buttons__item:last-child {
+    padding-left: 14px;
+}
+
+.section-column-buttons__item:first-child {
+    background-color: #ffffff;
+    padding: 17px 34px;
+    color: black;
+}
+
+
+/*section-2*/
+
+.section-2 {
+    max-width: 880px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section-2-column {
+    flex: 1 1 25%;
+}
+
+.section-2-column__img {
+    margin-bottom: 25px;
+}
+
+.section-2-column__title {
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.section-2-column__title h2 {
+    font-family: "Azik";
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.section-2-column__decription {
+    margin-bottom: 31px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.section-2-column__decription span {
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.section-2-column__button {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-2-column__button {
+    text-decoration: underline;
+}
+
+.button a {
+    margin-bottom: 40px;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #000;
+    text-transform: uppercase;
+    font-family: Bebas Neue;
+}
+
+.button a:hover {
+    color: black;
+    background-color: #4d4d4d;
+}
+
+
+/*section-3*/
+
+.section-3 {
+    display: flex;
+    max-width: 1336px;
+    margin: 0 auto;
+}
+
+.section-3-column {
+    position: relative;
+    flex: 1 1 50%;
+    background-color: #000;
+    text-align: right;
+    padding: 56px 0;
+}
+
+.section-3-column span {
+    color: #ffffff;
+    font-family: "Bebas Neueu";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 5px;
+    line-height: normal;
+    padding-right: 50px;
+}
+
+.section-3-column img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*section-4*/
+
+.section-4 {
+    padding-top: 50px;
+    background-color: #ebebeb;
+    margin-bottom: 82px;
+    max-width: 1336px;
+    margin: 0 auto;
+    margin-bottom: 95px;
+}
+
+.section-4-container {
+    max-width: 885px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-4-column {
+    flex: 1 1 50%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.section-4-colmn__img {}
+
+.section-4-column-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-4-column-description__title {
+    padding: 0 10px;
+}
+
+.section-4-column-description__title h2 {}
+
+.section-4-column-description__text {
+    padding: 0 10px;
+}
+
+.section-4-column-description__text span {
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+/*section-5*/
+
+.section-5 {}
+
+.section-5-container {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.section-5__title {
+    margin-bottom: 40px;
+}
+
+.section-5__title h1 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.section-5-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-5-column__item {
+    flex: 1 1 50%;
+    display: flex;
+    margin-bottom: 23px;
+}
+
+.section-5-column__item:last-child img {
+    margin-right: 20px;
+}
+
+.section-5-column__img {
+    margin-right: 10px;
+}
+
+.section-5-column__text {}
+
+
+/* section-6 */
+
+.section-6 {}
+
+.section-6-container {
+    max-width: 1336px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section-6__img {
+    position: relative;
+    padding-bottom: 475px;
+    width: 50%;
+}
+
+.section-6__img img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.section-6__output {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 30px 60px;
+    background-color: #000;
+}
+
+.section-6__title {
+    margin-bottom: 28px;
+}
+
+.section-6__title h2 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.section-6-input-1 {}
+
+.section-6-input-1 input {
+    width: 375px;
+    height: 50px;
+    border: 2px solid #959595;
+    background-color: #252525;
+    margin-bottom: 25px;
+}
+
+.section-6-input-2 {}
+
+.section-6-input-2 input {
+    width: 375px;
+    height: 50px;
+    border: 2px solid #959595;
+    background-color: #252525;
+    margin-bottom: 25px;
+}
+
+.section-6-input-3 {}
+
+.section-6-input-3 input {
+    width: 375px;
+    height: 100px;
+    border: 2px solid #959595;
+    background-color: #252525;
+    margin-bottom: 25px;
+}
+
+.section-6-button {}
+
+.section-6-button a {
+    padding: 18px 22px;
+    background-color: #ebebeb;
+    display: inline-block;
+    font-family: Bebas;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-radius: 0%;
+}
+
+.section-6-button a:hover {
+    opacity: 0.9;
+}
+
+
+/*footer*/
+
+.footer {}
+
+.footer-container {
+    max-width: 880px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__text {}
+
+.footer__text span {
+    color: #4d4d4d;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.footer__text a {
+    text-decoration: underline;
+}
+
+.footer__logo {}
+
+.footer__logo img {}
